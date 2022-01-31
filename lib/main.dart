@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
 
               return MaterialApp(
                 home: AnimatedSplashScreen(
-                  splash: Text("Welcome to my ShopApp",style: TextStyle(fontSize: 22,color: Colors.orange,fontWeight: FontWeight.bold),),
+                  splash: Image.asset("images/logoorange.png"),
                   nextScreen: Home(),
                   splashTransition: SplashTransition.rotationTransition,
                   backgroundColor: Colors.white,

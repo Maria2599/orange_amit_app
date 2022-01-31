@@ -20,11 +20,7 @@ class HomeState extends State<Home> {
             listener: (BuildContext context, state) {},
             builder: (BuildContext context, Object? state) {
               AppCubit cubit = BlocProvider.of(context);
-              return ConditionalBuilder(
-                  condition: cubit.products != null,
-                  fallback: (context) =>
-                      Center(child: CircularProgressIndicator()),
-                  builder: (context) => Scaffold(
+              return Scaffold(
                         appBar: AppBar(
                           backgroundColor: Colors.white,
                           title: Center(
@@ -55,7 +51,7 @@ class HomeState extends State<Home> {
                                 icon: Icon(Icons.menu), label: 'Menu'),
                           ],
                         ),
-                      ));
+                      );
             }));
   }
 }

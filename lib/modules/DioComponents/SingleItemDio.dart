@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:graduation_project/layout/cubit/cubit.dart';
 import 'package:graduation_project/layout/cubit/states.dart';
-import 'package:graduation_project/modules/Components/singleItem.dart';
+import 'package:graduation_project/modules/Components/components.dart';
 
 class SingleItem extends StatelessWidget {
-  int product_id;
+  final int product_id;
 
   SingleItem({required this.product_id});
 
@@ -20,7 +20,7 @@ class SingleItem extends StatelessWidget {
             builder: (BuildContext context, state) {
               var cubit = AppCubit.get(context);
               return ConditionalBuilder(
-                  condition: cubit.product_details != null,
+                  condition: state is! GetProductDetailsDataLoadingState && cubit.productModelDetails != null,
                   fallback: (context) =>
                       Center(child: CircularProgressIndicator()),
                   builder: (context) => buildSingleItem(context));
