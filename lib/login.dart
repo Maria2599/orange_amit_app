@@ -25,7 +25,7 @@ class LoginState extends State<Login> {
       backgroundColor: Colors.white,
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(28.0),
+          padding: const EdgeInsets.all(25.0),
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Form(
@@ -34,7 +34,7 @@ class LoginState extends State<Login> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'images/logoamitorange.jpeg',
+                      'images/logoamit.png',
                       height: 260,
                     ),
                     SizedBox(
@@ -143,8 +143,11 @@ class LoginState extends State<Login> {
                                 fontWeight: FontWeight.bold,
                                 color: Colors.orange),
                           )),
+
                     ]),
+
                   ]),
+
             ),
           ),
         ),

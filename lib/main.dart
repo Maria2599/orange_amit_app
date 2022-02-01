@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
               return MaterialApp(
                 home: AnimatedSplashScreen(
                   splash: Image.asset("images/logoorange.png"),
-                  nextScreen: Home(),
+                  nextScreen: Login(),
                   splashTransition: SplashTransition.rotationTransition,
                   backgroundColor: Colors.white,
                 ),

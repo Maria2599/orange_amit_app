@@ -32,7 +32,7 @@ class RegistState extends State<Regist> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'images/logoamitorange.jpeg',
+                      'images/logoamit.png',
                       height: 260,
                     ),
                     SizedBox(

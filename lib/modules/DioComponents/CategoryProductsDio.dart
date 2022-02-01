@@ -6,10 +6,10 @@ import 'package:graduation_project/layout/cubit/cubit.dart';
 import 'package:graduation_project/layout/cubit/states.dart';
 import 'package:graduation_project/modules/Components/components.dart';
 
-class FashioDio extends StatelessWidget {
+class CategoryProduct extends StatelessWidget {
   final int category_id;
 
-  FashioDio({required this.category_id});
+  CategoryProduct({required this.category_id});
 
   @override
   Widget build(BuildContext context) {
